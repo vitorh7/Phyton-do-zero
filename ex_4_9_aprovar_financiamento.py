@@ -1,4 +1,8 @@
-#O empréstimo segue a regra que a prestação não ultrapasse 30% do salário.
+###################
+# Parte do livro Introdução à Programação com Python (edição 3)
+# Site: https://python.nilo.pro.br/
+# Edicao 3: ex4.9 28/12/2024
+###################
 emprestimo=float(input("Digite o valor da casa para fazer o empréstimo: "))
 salario=float(input("Qual é seu salário?: "))
 tempo=float(input("Quanto tempo para pagar as parcelas da casa em anos?: "))
