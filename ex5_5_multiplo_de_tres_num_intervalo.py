@@ -1,7 +1,8 @@
-#Exercício do Livro modificado
-#Escrever todos os múltiplo de um número numa sequencia um intervalo.
-#Ex 5.5
-#01/01/2025
+###################
+# Parte do livro Introdução à Programação com Python (edição 3)
+# Site: https://python.nilo.pro.br/
+# Edicao 3: ex5.5
+###################
 inicio = int(input("Digite um inicio para sequencia: "))
 fim = int(input("Digite um fim para sequencia: "))
 multiplo = int(input("Digite um numero para saber seus múltiplos nessa sequencia: "))
