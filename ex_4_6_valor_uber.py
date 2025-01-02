@@ -1,5 +1,8 @@
-#Calcular o preço da viagem
-#29/12/24
+###################
+# Parte do livro Introdução à Programação com Python (edição 3)
+# Site: https://python.nilo.pro.br/
+# Edicao 3: ex4.6 28/12/2024
+###################
 distancia=float(input("Voce vai pedir Uber, qual distancia deseja percorrer em Km?: "))
 veiculo=input("Voce vai de carro ou moto?: ")
 if distancia<=200:
