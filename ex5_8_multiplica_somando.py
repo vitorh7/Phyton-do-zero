@@ -1,7 +1,7 @@
 ###################
-# Parte do livro Introdução à Programação com Python
+# Parte do livro Introdução à Programação com Python (edição 3)
 # Site: https://python.nilo.pro.br/
-# ex-5-8-multiplicar-usando-soma-e-subtração
+# Edicao 3: ex5.8 02/01/2025
 ###################
 num1=int(input("Digite um número: "))
 num2=int(input("Digite outro número: "))
