@@ -1,5 +1,8 @@
-#Ler 3 números e inprimir o maior e o menor
-#29/12/24
+###################
+# Parte do livro Introdução à Programação com Python (edição 3)
+# Site: https://python.nilo.pro.br/
+# Edicao 3: ex4.2 29/12/2024
+###################
 num1=float(input("Digite o primeiro número: "))
 num2=float(input("Digite o segundo número: "))
 num3=float(input("Digite o terceiro número: "))
