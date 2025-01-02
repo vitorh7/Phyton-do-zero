@@ -1,7 +1,7 @@
 ###################
 # Parte do livro Introdução à Programação com Python (edição 3)
 # Site: https://python.nilo.pro.br/
-# Edicao 3: ex4.2 29/12/2024
+# Edicao 3: ex4.3 29/12/2024
 ###################
 num1=float(input("Digite o primeiro número: "))
 num2=float(input("Digite o segundo número: "))
