@@ -1,0 +1,25 @@
+###################
+# Parte do livro Introdução à Programação com Python (edição 3)
+# Site: https://python.nilo.pro.br/
+# Edição 3: ex6.8.
+# Data: 02/03/2025
+###################
+# Pesquisa de valores em uma lista
+lista = [1, 15, 7, 27, 39]
+while True:
+    try:
+        p = int(input("Digite o valor a procurar\ntecle 0 para finalizar: "))
+        if p == 0:
+            break
+    except ValueError:
+        print("Digite um número inteiro.")
+        continue
+
+    x = 0
+    while x < len(lista):
+        if lista[x] == p:
+            print(f"{p} achado na posição {x}")
+            break
+        x += 1
+    else:
+        print(f"{p} não encontrado.")

@@ -1,0 +1,23 @@
+###################
+# Parte do livro Introdução à Programação com Python (edição 3)
+# Site: https://python.nilo.pro.br/
+# Edição 3: ex6.7.
+# Data: 02/03/2025
+###################
+# Programa 6.7 - Verificador de expressões com parênteses ()
+pilha = []
+while True:
+    expressao = input("Digite a expressão em parênteses ( ou ),\ntecle S para sair:")
+    if expressao == "S" or expressao == "s": #Verifica se o usuário deseja sair
+        break
+    elif expressao == "(": #Verifica abertura de parênteses
+        pilha.append("(") #Adiciona um parêntese aberto à pilha
+        print(f"A expressão contém {len(pilha)} parênteses abertos.")
+    elif expressao == ")": #Verfica fechamento de parênteses
+        if len(pilha) > 0: #Testa se há parênteses abertos
+            pilha.pop(-1) #Remove o último parêntese aberto
+            print(f"A expressão fechou um parêntese. Restam {len(pilha)} parênteses abertos.")
+        else:
+            print("Erro, não é possível fechar parênteses sem ter aberto antes.")
+    else:
+        print("Entrada inválida!")
