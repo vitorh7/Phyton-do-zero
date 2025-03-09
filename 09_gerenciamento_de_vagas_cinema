@@ -1,0 +1,33 @@
+#09/03/2025
+#Programa que atera o valor das quantidades de vagas de um cinema
+#Lista com a quantidade de vagas em cada sala
+Salas = [10, 3, 5, 2, 3, 4, 5, 22, 7]
+while True:
+    try:
+        #Solicita a sala que deseja alugar
+        escolha = int(input("Digite a sala que deseja alugar (0 para sair):\n"))
+        #Verifica se a sala escolhida existe ou se deseja sair
+        if escolha == 0:
+            break
+        elif escolha > len(Salas) or escolha < 1:
+            print("Sala não existe.")
+        elif Salas[escolha-1] == 0:
+            print("Sala sem vagas.")
+        else:
+            while True:
+                try:
+                    #Vai tentar solicitar a quantidade de cadeiras que deseja alugar, se for um valor inválido, vai continuar no loop
+                    cadeiras = int(input(f"Vagas disponíveis: {Salas[escolha-1]}, Quantas CADEIRAS deseja alugar? (0 para sair)\n"))
+                    if cadeiras == 0:
+                        break
+                    elif cadeiras > Salas[escolha-1] or cadeiras < 0:
+                        print("Quantidade inválida!")
+                        continue
+                    #Altera a quantidade de vagas na sala escolhida
+                    Salas[escolha-1] -= cadeiras
+                    print(f"Pedido feito com sucesso! Você alugou {cadeiras}\ncadeiras na sala {escolha}, restaram {Salas[escolha-1]} cadeiras.")
+                    break  # Saída do loop de escolha de cadeiras se a quantidade for válida
+                except ValueError:
+                    print("Valor inválido! Por favor, insira um número inteiro.")
+    except ValueError:
+        print("Valor inválido! Por favor, insira um número inteiro.")
