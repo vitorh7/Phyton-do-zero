@@ -4,25 +4,27 @@
 # Edição 3: ex6.13.
 # Data: 09/03/2025
 ###################
-#Programa com a lista e temperaturas Mons, na Bélgica. Tirar a média, o menor e maior valor.
+# Programa com a lista e temperaturas Mons, na Bélgica. Tirar a média, o menor e maior valor.
 
-#Menor Valor
+# Lista de temperaturas
 L = [-10, -8, 0, 1, 2, 5, -2, -4]
+
+# Menor Valor
 menor = L[0]
 for i in L:
-   if i < menor:
-       menor = i
+    if i < menor:
+        menor = i
 print(menor)  # Saída: -10
 
-#Maior Valor
+# Maior Valor
 maior = L[0]
 for i in L:
-   if i > maior:
-       maior = i
+    if i > maior:
+        maior = i
 print(maior)  # Saída: 5
 
-#Média
+# Média
 soma = 0
 for i in L:
-       soma += i
+    soma += i
 print(f"{soma/len(L):.2f}")  # Saída: -2.00
