@@ -8,7 +8,7 @@ while True:
             L.append(n)
         else:
             break
-    except:
+    except ValueError:
         print('Digite um número inteiro')
 fim = len(L)
 while fim > 1:
